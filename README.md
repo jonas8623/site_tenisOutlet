@@ -1,2 +1,7 @@
 # site_tenisOutlet
-site de tênis 
+
+portifolio para tenis 
+
+## Tarefas
+
+As tarefas serão realizadas no GitHub
