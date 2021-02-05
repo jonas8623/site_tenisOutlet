@@ -2,3 +2,173 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
 
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+h1{
+    font-family: "Roboto Condensed", serif;
+    font-size: 4rem;
+    color:red;
+    text-shadow: .3rem .4rem 2px black ;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+.procurar{
+    width: 100%;
+    position: absolute;
+    margin-right: 1rem;
+    top: 21%;
+}
+.procurar form{
+    max-width: 100%;
+    max-height: 100%;
+    text-align: right;
+}
+.procurar input{
+    border: 1px solid #ccc;
+    padding: .5rem 1rem ;
+    border-radius: 5px;
+   font-size: .8rem;
+}
+
+
+.procurar button{
+    margin-right: 4rem;
+    background-color: transparent;
+    border: 0;
+}
+
+ button{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.fa{
+  margin-right: .3rem;
+}
+
+.menu{
+    background: #4b6cb7; 
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7); 
+    background: linear-gradient(to right, midnightblue, #4b6cb7); 
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    line-height: 6;
+    margin-bottom: 1.5rem;
+}
+
+.menu li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: red;
+    margin: 5rem;
+    transition: color 2s;
+}
+.menu a:hover{
+    color: black;
+    opacity: .8;
+}
+.info{
+    max-width: 100%;
+    height: 100%;
+    font-family: "Yanone Kaffeesatz", serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1.8rem;
+    margin-bottom: 3rem;
+}
+.info .fas{
+    font-size: 1.7rem;
+    padding: .4rem;
+}
+.info h3{
+    text-transform: uppercase;
+}
+.catalogo{
+    max-width: 100%;
+    display: block;
+    float: left;
+    max-height: 100%;
+    margin-left: 6.4rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    line-height: 2rem;
+}
+.catalogo-item{
+    float: left;
+    padding: .8rem;
+    text-align: center;
+    border: 2px outset #f2f2f2;
+    border-radius: .2rem;
+    margin: 1.8rem 2.4rem
+}
+.lazy-img{
+    height: 16rem;
+    width: 15rem;
+    padding: 2rem;
+    cursor: pointer;
+
+}
+.lazy-img img{
+    opacity: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.lazy-img img.loaded{
+    opacity: 1;
+    transition: opacity 2s;
+}
+.catalogo-item h3{
+    font-family: "Noto Sans",serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: black;
+    transition: color 2s;
+}
+.catalogo span{
+    font-weight: bold;
+    color:midnightblue;
+}
+.catalogo-item a{
+    padding: .5rem 1rem; 
+    color:rgb(128, 128, 128);
+    border: 0px solid midnightblue;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-style: normal;
+    border-radius: 5px;
+    font-weight: lighter;
+    line-height: 3.6rem;
+    background-color: rgba(25, 25, 113, 0.274);
+    transition: color 2s;
+}
+.catalogo-item a:hover{
+    color: black;
+}
+
+.catalogo-item:hover{
+    border: .1rem solid black;
+    border-radius: .2rem;
+}
+.catalogo-item h3:hover{
+    color: midnightblue;
+    opacity: .9;
+}
