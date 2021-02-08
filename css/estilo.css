@@ -284,3 +284,21 @@ footer{
  margin-inline-end: 2rem;
  letter-spacing: .1rem;
 }
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1200px) {
+    .menu{
+        font-size: .8rem;
+    }
+    .info{
+        font-size: .8rem;
+    }
+    .catalogo-item{
+       margin: .7rem .5rem
+    }
+    .rodape h3{
+        font-size: 1.6rem;
+    }
+    .conteudo-sobre p{
+        font-size: .9rem;
+    }
+}
