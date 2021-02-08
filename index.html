@@ -97,8 +97,8 @@
             </div>
             <div class="catalogo-item">
                 <div class="lazy-img">
-                <img src="" data-url="img/Tenis-Nike.jpg" alt="">
-            </div>
+                    <img src="" data-url="img/Tenis-Nike.jpg" alt="">
+                </div>
                 <h3>Tênis Nike Rosa</h3>
                 <span class="preco">R$ 280,90</span>
                 <p>6x R$ 46,81</p>
@@ -148,32 +148,57 @@
         </section>
 
         <footer>
-            
+            <div class="rodape">
+                <div class="conteudo-sobre">
+                    <h3>Sobre</h3>
+                    <p> Loja teve início no ano 1999, começou como um pequeno lençol e com alguns pares de tênis, acabou
+                        se tornando uma loja virtual com grande potencial e garra para crescer mais e mais!!</p>
+                </div>
+                <div class="conteudo-pagamento">
+                    <h3>Formas de Pagamento</h3>
+                    <div class="img-pagamento">
+                        <img src="img/visa.png " alt="Cartão visa">
+                        <img src="img/mastercard.jpg" alt="Cartão Master">
+                        <img src="img/elo.jpg" alt="Cartão Elo">
+                    </div>
+                </div>
+                <div class="conteudo-redes">
+                    <h3>Redes Sociais</h3>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="conteudo-direitos">
+                    <p>
+                        Copyright &copy; 2021, Jonas Quirino - Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
         </footer>
     </div>
 
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <script >
+    <script>
 
         var carregarImagem;
 
-        $(document).ready(function(){
-            $(".lazy-img img").on("load",function(){
+        $(document).ready(function () {
+            $(".lazy-img img").on("load", function () {
                 $(this).addClass("loaded");
             });
-            $(document).on("scroll", function(){
+            $(document).on("scroll", function () {
                 carregarImagem();
             });
 
-            (carregarImagem = function carregarImagem(){
-                $.each($(".lazy-img"), function(){
+            (carregarImagem = function carregarImagem() {
+                $.each($(".lazy-img"), function () {
                     var block = $(this);
                     var imagem = block.find("img");
 
-                    if (visivel(block)){
+                    if (visivel(block)) {
                         var url = imagem.data("url");
 
-                        if (imagem.attr("src") != url){
+                        if (imagem.attr("src") != url) {
                             imagem.attr("src", url);
                         };
                     }
