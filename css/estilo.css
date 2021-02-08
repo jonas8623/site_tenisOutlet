@@ -180,7 +180,6 @@ h1{
 footer{
     width: 100%;
     height: 50px;
-    
     display: table;
     background: #4b6cb7; 
     background: -webkit-linear-gradient(to right, #182848, #4b6cb7); 
@@ -285,12 +284,10 @@ footer{
  letter-spacing: .1rem;
 }
 /* RESPONSIVIDADE */
+/* 1200px */
 @media screen and (max-width: 1200px) {
-    .menu{
-        font-size: .8rem;
-    }
-    .info{
-        font-size: .8rem;
+    .menu ul li a{
+        margin: 3.6rem;
     }
     .catalogo-item{
        margin: .7rem .5rem
@@ -298,7 +295,47 @@ footer{
     .rodape h3{
         font-size: 1.6rem;
     }
-    .conteudo-sobre p{
+    
+}
+/* 960px*/
+@media screen and (max-width: 960px){
+    h1{
+        font-size: 3.5rem;
+    }
+    .procurar input{
+        padding: .3rem .7rem;
+    }
+    .menu{
+        font-size: 1rem;
+    }
+    .menu ul li a{
+        margin: 3rem;
+    }
+    .info{
         font-size: .9rem;
+        margin-left: 4.2rem;
+    }
+    .catalogo{
+        padding: .4rem;
+    }
+    .catalogo-item{
+        margin: .8rem .7rem;
+    }
+    .rodape h3{
+        font-size: 1.65rem;
+    }
+    .conteudo-sobre{
+        width: 25.31%;
+    }
+    .conteudo-sobre p{
+        font-size: 1rem;
+    }
+    .img-pagamento img{
+        height: 1.7rem;
+        width: 1.7rem;
+       text-align: right;
+    }
+    .conteudo-direitos p {
+     line-height: 4rem;
     }
 }
