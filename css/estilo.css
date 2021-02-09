@@ -335,6 +335,7 @@ footer{
 }
 /* 768px */
 @media screen and (max-width: 768px){
+    
     h1{
         font-size: 3rem;
     }
@@ -406,5 +407,81 @@ footer{
     .conteudo-direitos p {
      display: block;
      line-height: none;
+    }
+}
+/* 480px */
+@media screen and (max-width: 480px){
+    h1{
+        margin-bottom: 1rem;
+    }
+    .procurar form{
+        display: none;
+    }
+    .fa{
+        display: none;
+    }
+    .menu li{
+        display: block;
+        margin-left: 2.5rem;
+        padding: 0;
+    }
+    .info{
+        font-size: .8rem;
+        margin-left: 3rem;
+        padding: .5rem;
+        margin-bottom: 1.4rem;
+    }
+    .info .fas{
+        font-size: 1.2rem;
+    }
+    .catalogo-item{
+        padding: .3rem;
+    }
+    .lazy-img{
+        height: 10rem;
+        width: 11rem;
+        padding: .7rem;
+    }
+    .lazy-img img{
+       width: 60%;
+       height: 60%;
+    }
+    .catalogo h3{
+        font-size: .8rem;
+    }
+    .catalogo-item p{
+        font-size: .8rem;
+    }
+    span{
+        font-size: .8rem;
+    }
+    .link-compra{
+        padding: .2rem .8rem;
+        font-size: .8rem;
+        line-height: 2rem;
+    }
+    .rodape h3{
+        font-size: 1.1rem;
+    }
+    .img-pagamento{
+        padding-left: 2.3rem;
+    }
+    .img-pagamento img{
+        height: 1.3rem;
+        width: 1.2rem;
+    }
+    .conteudo-redes{
+        padding-bottom: 2rem;
+    }
+    .conteudo-redes h3{
+        padding-top: 2.3rem;
+        margin-inline-start:0;
+        margin-inline-end:.7rem;
+    }
+    .conteudo-redes i{
+        font-size: 1.2rem;
+    }
+    .conteudo-direitos{
+        letter-spacing: 0;
     }
 }
