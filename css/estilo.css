@@ -485,3 +485,35 @@ footer{
         letter-spacing: 0;
     }
 }
+/* 320px */
+@media screen and (max-width: 320px){
+
+    h1{
+        font-size: 2.8rem;
+        margin-bottom: 0;
+    }
+    .menu{
+        font-size: .8rem;
+        margin-bottom: .2rem;
+    }
+    .info{
+        margin-left: 1rem;
+        margin-bottom: .4rem;
+        display: block;
+    }
+    .catalogo{
+        
+        margin-left: .8rem;
+    }
+    .conteudo-pagamento {
+        display: none;
+    }
+    .conteudo-redes{
+        width: 80%;
+        margin-left: 1.5rem;
+        text-align: center;
+    }
+    .conteudo-direitos{
+        font-size: .65rem;
+    }
+}
