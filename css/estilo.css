@@ -147,11 +147,13 @@ h1{
     color: black;
     transition: color 2s;
 }
-.catalogo span{
+ span{
     font-weight: bold;
     color:midnightblue;
 }
-.catalogo-item a{
+.link-compra{
+    font-weight: bold;
+    color:midnightblue;
     padding: .5rem 1rem; 
     color:rgb(128, 128, 128);
     border: 0px solid midnightblue;
@@ -162,15 +164,7 @@ h1{
     font-weight: lighter;
     line-height: 3.6rem;
     background-color: rgba(25, 25, 113, 0.274);
-    transition: color 2s;
-}
-.catalogo-item a:hover{
-    color: black;
-}
-
-.catalogo-item:hover{
-    border: .1rem solid black;
-    border-radius: .2rem;
+    cursor: pointer;
 }
 .catalogo-item h3:hover{
     color: midnightblue;
@@ -337,5 +331,80 @@ footer{
     }
     .conteudo-direitos p {
      line-height: 4rem;
+    }
+}
+/* 768px */
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+    .procurar input{
+        padding: .3rem .4rem;
+        margin-top: 1.9rem;
+    }
+    .menu ul li a{
+        margin: 1.5rem
+    }
+    .info{
+        font-size: .8rem;
+        margin-left: 4rem;
+        margin-bottom: 1.6rem;
+    }
+    .info .fas{
+        font-size: 1.4rem;
+    }
+    .catalogo-item{
+        padding: .7rem;
+    }
+    .lazy-img{
+        height: 13rem;
+        width: 13rem;
+        padding: 1.2rem;
+    }
+    .lazy-img img{
+       width: 65%;
+       height: 65%;
+    }
+    .catalogo h3{
+        font-size: 1rem;
+    }
+    .link-compra{
+        padding: .3rem 1rem;
+        font-size: 1rem;
+        line-height: 3.1rem;
+    }
+    .rodape h3{
+        font-size: 1.45rem;
+    }
+    .conteudo-sobre{
+        display: none;
+    }
+    .conteudo-sobre p{
+        display: none;
+    }
+    .conteudo-pagamento{
+        width: 60%;
+        padding-left: 3.8rem;
+    }
+    .img-pagamento img{
+        height: 1.6rem;
+        width: 1.8rem;
+        padding-left: 1.5rem;
+    }
+    .conteudo-redes{
+        padding-left: 0;
+    }
+    .conteudo-redes h3{
+        padding-top: 2.3rem;
+        margin-inline-start:0;
+        margin-inline-end:2rem;
+    }
+
+    .conteudo-redes i{
+        margin-block-start: 2rem;
+    }
+    .conteudo-direitos p {
+     display: block;
+     line-height: none;
     }
 }
